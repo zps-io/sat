@@ -15,20 +15,20 @@ go get github.com/solvent-io/sat
 
 ```
 import (
-  "github.com/solvent-io/sat"
+	"github.com/solvent-io/sat"
 )
 
 variableA := NewVariable("A")
-  variableB := NewVariable("B")
+variableB := NewVariable("B")
 
-  solver := NewSolver()
-  solver.AddClause(variableA, variableB)
+solver := NewSolver()
+solver.AddClause(variableA, variableB)
 
-  satisfiable, solutions := solver.Satisfiable()
+satisfiable, solutions := solver.Satisfiable()
 
-  fmt.Printf("Satisfiable?: %t\nSolutions:", satisfiable)
-  for i, soln := range solutions {
-    fmt.Printf("\n%d:\n", i)
-    soln.Print()
-  }
+fmt.Printf("Satisfiable?: %t\nSolutions:", satisfiable)
+for i, soln := range solutions {
+	fmt.Printf("\n%d:\n", i)
+	soln.Print()
+}
 ```
