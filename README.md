@@ -15,7 +15,7 @@ go get github.com/fezz-io/sat
 
 ```
 import (
-	"github.com/solvent-io/sat"
+	"github.com/fezz-io/sat"
 )
 
 variableA := NewVariable("A")
