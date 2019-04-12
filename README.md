@@ -9,7 +9,7 @@ The primary motivation for this port was to create a code base that could suppor
 
 ### Installing
 
-go get github.com/solvent-io/sat
+go get github.com/fezz-io/sat
 
 ### Basic Usage
 
